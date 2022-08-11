@@ -1,0 +1,17 @@
+{
+    "Token":"i4--ksmxOjnCuIMTaBBD2Q",
+    "business_flag": "youtu_lowsource_chongqing",
+    "model_local_file_path": "/youtu_pedestrian_detection/zhuhe/soccernet/split_cmd",
+    "host_num": 1,
+    "host_gpu_num": 1,
+    "GPUName": "V100",
+    "dataset_id": "899688f37e42d3ed017e432c71190679",
+    "image_full_name": "mirrors.tencent.com/arthurhzhu/soccer:v1",
+    "enable_ceph_metadata_cache": false,
+    "task_flag": "all_split_v2_ela_2",
+    "exec_start_in_all_mpi_pods": true,
+    "enable_rdma": false,
+    "is_elasticity": true,
+    "enable_evicted_end_task": true,
+    "enable_evicted_pulled_up": true
+}

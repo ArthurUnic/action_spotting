@@ -1,0 +1,1 @@
+jizhi_client start -scfg train.json 
