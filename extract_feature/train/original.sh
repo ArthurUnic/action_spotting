@@ -1,5 +1,6 @@
-export PYTHONPATH=$PWD/:$PYTHONPATH:/youtu_pedestrian_detection/zhuhe/soccernet
-cd /youtu_pedestrian_detection/zhuhe/soccernet/exps/train
+Location= your path
+export PYTHONPATH=$PWD/:$PYTHONPATH:$Location
+cd $Location/exps/train
 
 python ../../tools/run_net.py --cfg ../../configs/Aicity/MVITV2_FULL_B_16x4_CONV_448.yaml \
 TRAIN.CHECKPOINT_FILE_PATH ../../models/k700_train_mvitV2_full_16x4_fromscratch_e200_448.pyth \

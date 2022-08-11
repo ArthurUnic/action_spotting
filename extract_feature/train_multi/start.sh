@@ -1,7 +1,6 @@
-export NCCL_IB_DISABLE=1;
-export my_port=23456;
-export PYTHONPATH=$PWD/:$PYTHONPATH:/youtu_pedestrian_detection/zhuhe/soccernet
-dir=/youtu_pedestrian_detection/zhuhe/soccernet/exps/train_chengzhi 
+Location= your path
+export PYTHONPATH=$PWD/:$PYTHONPATH:$Location
+dir=$Location/exps/train_multi
 cd $dir 
 
 BATCH_SIZE=512;

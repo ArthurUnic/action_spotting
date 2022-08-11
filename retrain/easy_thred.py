@@ -9,11 +9,11 @@ from collections import defaultdict
 
 parser = argparse.ArgumentParser()
 # parser.add_argument("--anno_file",default='')
-parser.add_argument("--source_test_path",default='')#输入test文件夹 
-parser.add_argument("--output_test_path",default='')  #生成test文件夹，用来评估
+parser.add_argument("--source_test_path",default='') 
+parser.add_argument("--output_test_path",default='')  
 
-parser.add_argument("--source_challenge_path",default='')#输入challenge文件夹 
-parser.add_argument("--output_challenge_path", default="")  #输出challenge文件夹
+parser.add_argument("--source_challenge_path",default='') 
+parser.add_argument("--output_challenge_path", default="")  
 # parser.add_argument('--window_start', type=int,   default=10,     help='Size of the chunk (in seconds)' )
 # parser.add_argument('--window_end', type=int,   default=50,     help='Size of the chunk (in seconds)' )
 # parser.add_argument('--window_gap',  type=int,   default=0.5,     help='Size of the chunk (in seconds)' )
@@ -98,7 +98,7 @@ for action in tqdm(thred.keys()):
             with open(os.path.join(args.output_test_path,cata,'results_spotting.json'),'w') as f:
                 json.dump(json_data,f,indent=2)
         print( len(json_data["predictions"]), len(pres))
-        PATH_DATASET='/youtu_pedestrian_detection/junweil/action_datasets/soccernet'
+        PATH_DATASET='path of your dataset'
         PATH_PREDICTIONS=args.output_test_path
 
 

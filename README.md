@@ -62,7 +62,7 @@ Then we get the models in exps/, and we select the epoch_00095.pyth as the model
 Put it in the exps/
 ## Extract the features
 ```
-cd extract_feature
+cd extract_feature/infer
 bash run.sh
 bash run_norm.sh
 ```

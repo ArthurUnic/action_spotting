@@ -110,7 +110,7 @@ for action in tqdm(thred.keys()):
             with open(os.path.join(args.output_test_path,cata,'results_spotting.json'),'w') as f:
                 json.dump(json_data,f,indent=2)
 
-        PATH_DATASET='/youtu_pedestrian_detection/junweil/action_datasets/soccernet'
+        PATH_DATASET='path of your dataset'
         PATH_PREDICTIONS=args.output_test_path
 
 

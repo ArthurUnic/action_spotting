@@ -1,5 +1,6 @@
-export PYTHONPATH=$PWD/:$PYTHONPATH:/youtu_pedestrian_detection/zhuhe/soccernet
-dir=/youtu_pedestrian_detection/zhuhe/soccernet/exps/train_chengzhi 
+Location= your path
+export PYTHONPATH=$PWD/:$PYTHONPATH:$Location
+dir=$Location/exps/train_chengzhi 
 cd $dir 
 
 python ../../tools/run_net.py --cfg ../../configs/Aicity/MVITV2_FULL_B_16x4_CONV_448.yaml \

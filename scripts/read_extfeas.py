@@ -5,7 +5,7 @@ import numpy as np
 from tqdm import tqdm 
 
 video_lst='../all.lst'
-video_dir='/youtu_pedestrian_detection/junweil/action_datasets/soccernet'
+video_dir='path of your dataset'
 with open(video_lst) as f:
     video_files = [os.path.join(video_dir, line.strip())
                     for line in f]
@@ -30,8 +30,8 @@ def process_feature(prefix, out):
         video_name = video_name_part[-2]+'.'+video_name_part[-1].split('_')[0]
         video_fn = osp.join(video_dir, video_file)
         videolen = get_length(video_fn)
-        mpath = osp.join('/youtu_pedestrian_detection/zhuhe/soccernet/test/extract_feas', video_name + '.pth')
-        m2path = osp.join('/youtu_pedestrian_detection/zhuhe/soccernet/test/{}'.format(prefix), video_name + '.pth')
+        mpath = osp.join('your path/test/extract_feas', video_name + '.pth')
+        m2path = osp.join('your path/test/{}'.format(prefix), video_name + '.pth')
         if not osp.exists(m2path):
             print('don\'t exist', idx, idx // 5, video_name)
             idx += 1 

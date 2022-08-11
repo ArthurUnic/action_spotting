@@ -18,10 +18,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--video_path",default='')  # the path of video
 parser.add_argument("--resolution", default="800:450", help="ffmpeg -vf scale=")
 parser.add_argument('--part',default='all',choices=['train_val','all'],help='train_val or all')
-parser.add_argument("--out_anno_file",default='/youtu_pedestrian_detection/zhuhe/soccernet/data/annotations/all_3_with_bg.csv')  #path to save the annotations
+parser.add_argument("--out_anno_file",default='your path/data/annotations/all_3_with_bg.csv')  #path to save the annotations
 parser.add_argument("--clip_length", default="3")  
-parser.add_argument("--clip_cmds",default='/youtu_pedestrian_detection/zhuhe/soccernet/split_cmd/all_cut_3_with_bg/cut_bg.sh')  
-parser.add_argument("--target_path",default='/youtu_pedestrian_detection/zhuhe/soccernet/data/bg_clips_3')
+parser.add_argument("--clip_cmds",default='your path/split_cmd/all_cut_3_with_bg/cut_bg.sh')  
+parser.add_argument("--target_path",default='your path/data/bg_clips_3')
 parser.add_argument("--visibility", default='all', choices=['visible', 'all'])
 
 
